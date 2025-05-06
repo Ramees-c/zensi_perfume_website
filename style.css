@@ -10,6 +10,19 @@
   font-family: "Allura", cursive;
 }
 
+.blur-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 2.5rem;
+  height: 25rem;
+  border-radius: 9999px;
+  filter: blur(100px);
+  z-index: -20;
+}
+
 /* Minimal custom CSS for effects that can't be done with Tailwind */
 @keyframes scroll {
   from {
@@ -21,6 +34,12 @@
 }
 .scroll-animate {
   animation: 10s scroll infinite linear;
+}
+
+@media (min-width: 1280px) {
+  .blur-circle {
+    width: 10rem;
+  }
 }
 
 @media screen and (width: 1024px) and (height: 600px) {
@@ -77,73 +96,5 @@
   100% {
     transform: scale(1);
     box-shadow: 0 0 10px rgba(37, 211, 102, 0.4);
-  }
-}
-
-/* Fix for Chrome on Android */
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  input,
-  textarea,
-  select {
-    font-size: 16px !important;
-  }
-}
-
-/* Prevent text size adjustment */
-html {
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-}
-
-/* Fix for sticky hover on mobile */
-@media (hover: none) {
-  .hover\:bg-\[\#efc3c5\]:hover,
-  .hover\:text-\[\#f8ed88\]:hover,
-  .hover\:bg-gray-800:hover {
-    background-color: initial !important;
-    color: initial !important;
-  }
-}
-
-/* Improved scroll animation for mobile */
-@media (max-width: 640px) {
-  .scroll-animate {
-    animation-duration: 20s;
-  }
-}
-
-/* Fix for viewport height units on mobile */
-@supports (-webkit-touch-callout: none) {
-  .min-h-screen {
-    min-height: -webkit-fill-available;
-  }
-  .h-\[calc\(100vh-14vh\)\] {
-    height: calc(-webkit-fill-available - 14vh);
-  }
-}
-
-
-
-/* Prevent default touch behaviors */
-html, body {
-  touch-action: manipulation;
-  -webkit-overflow-scrolling: touch;
-}
-
-/* Fix for click delays */
-a, button, input, label, select {
-  touch-action: manipulation;
-}
-
-/* WhatsApp Icon Styles */
-@media (max-width: 640px) {
-  .whatsapp-icon {
-    bottom: 20px;
-    right: 15px;
-    padding: 8px;
-  }
-  .whatsapp-icon img {
-    width: 32px;
-    height: 32px;
   }
 }
