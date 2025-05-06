@@ -79,3 +79,71 @@
     box-shadow: 0 0 10px rgba(37, 211, 102, 0.4);
   }
 }
+
+/* Fix for Chrome on Android */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  input,
+  textarea,
+  select {
+    font-size: 16px !important;
+  }
+}
+
+/* Prevent text size adjustment */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* Fix for sticky hover on mobile */
+@media (hover: none) {
+  .hover\:bg-\[\#efc3c5\]:hover,
+  .hover\:text-\[\#f8ed88\]:hover,
+  .hover\:bg-gray-800:hover {
+    background-color: initial !important;
+    color: initial !important;
+  }
+}
+
+/* Improved scroll animation for mobile */
+@media (max-width: 640px) {
+  .scroll-animate {
+    animation-duration: 20s;
+  }
+}
+
+/* Fix for viewport height units on mobile */
+@supports (-webkit-touch-callout: none) {
+  .min-h-screen {
+    min-height: -webkit-fill-available;
+  }
+  .h-\[calc\(100vh-14vh\)\] {
+    height: calc(-webkit-fill-available - 14vh);
+  }
+}
+
+
+
+/* Prevent default touch behaviors */
+html, body {
+  touch-action: manipulation;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Fix for click delays */
+a, button, input, label, select {
+  touch-action: manipulation;
+}
+
+/* WhatsApp Icon Styles */
+@media (max-width: 640px) {
+  .whatsapp-icon {
+    bottom: 20px;
+    right: 15px;
+    padding: 8px;
+  }
+  .whatsapp-icon img {
+    width: 32px;
+    height: 32px;
+  }
+}

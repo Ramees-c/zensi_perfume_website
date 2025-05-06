@@ -2,7 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"
+    />
     <title>Document</title>
 
     <!-- Tailwind cdn -->
@@ -86,8 +90,11 @@
         </header>
 
         <!-- Hero section -->
-        <div
+        <!-- <div
           class="flex flex-col xl:flex-row h-[calc(100vh-14vh)] items-center justify-center xl:justify-between gap-10 xl:gap-0 custom-hero"
+        > -->
+        <div
+          class="flex flex-col xl:flex-row h-[calc(100vh-14vh)] min-h-[500px] items-center justify-center xl:justify-between gap-10 xl:gap-0 custom-hero"
         >
           <!-- Left Container -->
           <div
@@ -596,7 +603,7 @@
                   <div class="mb-4">
                     <input
                       type="text"
-                      class="w-full px-6 py-4 border border-gray-800 focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
+                      class="w-full px-4 py-3 text-base md:text-lg border border-gray-800 focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
                       placeholder="Your Name"
                       required
                     />
@@ -604,7 +611,7 @@
                   <div class="mb-4">
                     <input
                       type="email"
-                      class="w-full px-6 py-4 border border-gray-800 focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
+                      class="w-full px-4 py-3 text-base md:text-lg border border-gray-800 focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
                       placeholder="Your Email"
                       required
                     />
@@ -786,26 +793,28 @@
     </script>
 
     <script>
-      // Simple mobile menu toggle
+      // Mobile menu toggle
       document.querySelector("button").addEventListener("click", function () {
-        const nav = document.createElement("nav");
+        const nav = document.createElement("div");
         nav.className =
-          "fixed inset-0 bg-black z-50 flex flex-col items-center justify-center";
+          "fixed inset-0 bg-black bg-opacity-90 z-50 flex flex-col items-center justify-center";
         nav.innerHTML = `
-          <button class="absolute top-8 right-5 text-[#f8ed88] text-5xl">×</button>
-          <ul class="text-center space-y-10">
-            <li><a href="#" class="text-2xl text-[#f0f0f0] hover:text-[#efc3c5]">Home</a></li>
-            <li><a href="#" class="text-2xl text-[#f0f0f0] hover:text-[#efc3c5]">About</a></li>
-            <li><a href="#" class="text-2xl text-[#f0f0f0] hover:text-[#efc3c5]">Products</a></li>
-            <li><a href="#" class="text-2xl text-[#f0f0f0] hover:text-[#efc3c5]">Gallery</a></li>
-            <li><a href="#" class="text-2xl text-[#f0f0f0] hover:text-[#efc3c5]">Contact</a></li>
-          </ul>
-        `;
+    <button class="absolute top-8 right-5 text-[#f8ed88] text-5xl" aria-label="Close menu">&times;</button>
+    <ul class="text-center space-y-10">
+      <li><a href="#" class="text-2xl text-[#f0f0f0] hover:text-[#efc3c5] block py-2">Home</a></li>
+      <li><a href="#" class="text-2xl text-[#f0f0f0] hover:text-[#efc3c5] block py-2">About</a></li>
+      <li><a href="#" class="text-2xl text-[#f0f0f0] hover:text-[#efc3c5] block py-2">Products</a></li>
+      <li><a href="#" class="text-2xl text-[#f0f0f0] hover:text-[#efc3c5] block py-2">Gallery</a></li>
+      <li><a href="#" class="text-2xl text-[#f0f0f0] hover:text-[#efc3c5] block py-2">Contact</a></li>
+    </ul>
+  `;
 
+        document.body.style.overflow = "hidden";
         document.body.appendChild(nav);
 
         // Close button functionality
         nav.querySelector("button").addEventListener("click", function () {
+          document.body.style.overflow = "";
           nav.remove();
         });
       });
