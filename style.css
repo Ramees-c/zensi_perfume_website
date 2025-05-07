@@ -10,6 +10,20 @@
   font-family: "Allura", cursive;
 }
 
+.main-btn {
+  background-color: #f8ed88;
+  color: black;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.main-btn:hover {
+  background-color: #efc3c5;
+}
+
+/* Header */
 .blur-circle {
   position: absolute;
   top: 50%;
@@ -23,7 +37,22 @@
   z-index: -20;
 }
 
-/* Minimal custom CSS for effects that can't be done with Tailwind */
+
+/* Product section */
+.card-box {
+  background-color: #101010;
+  padding: 2rem;
+  border: 1px solid #1f2937;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card-box:hover {
+  background-color: #1f2937;
+  transform: scale(1.05);
+}
+
+
+/* scroll section */
 @keyframes scroll {
   from {
     transform: translateX(0);
@@ -34,12 +63,6 @@
 }
 .scroll-animate {
   animation: 10s scroll infinite linear;
-}
-
-@media (min-width: 1280px) {
-  .blur-circle {
-    width: 10rem;
-  }
 }
 
 @media screen and (width: 1024px) and (height: 600px) {
@@ -55,6 +78,26 @@
 @media screen and (width: 768px) and (height: 1024px) {
   .custom-hero img {
     height: 500px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .blur-circle {
+    width: 6rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .blur-circle {
+    width: 20rem;
+    top: 70%;
+  }
+}
+
+@media only screen and (max-width: 819px) {
+  .blur-circle {
+    width: 2rem;
+    top: 70%;
   }
 }
 
