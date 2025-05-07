@@ -37,6 +37,44 @@
   z-index: -20;
 }
 
+.toggle-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-btn {
+  position: absolute;
+  top: 2rem;
+  right: 1.25rem;
+  color: #f8ed88;
+  font-size: 3rem;
+}
+
+.toggle-container-list {
+  text-align: center;
+}
+
+.toggle-container-list > * + * {
+  margin-top: 2.5rem;
+}
+
+.toggle-container-text {
+  font-size: 1.5rem;
+  color: #f0f0f0;
+}
+
+.toggle-container-text:hover {
+  color: #f8ed88;
+}
 
 /* Product section */
 .card-box {
@@ -51,6 +89,124 @@
   transform: scale(1.05);
 }
 
+/* Feature section */
+.feature-card {
+  background-color: #000000;
+  padding: 1.5rem;
+  border: 1px solid #1f2937;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.feature-card:hover {
+  background-color: #1f2937;
+  transform: scale(1.05);
+}
+
+/* Sale section */
+.glow-circle1 {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  width: 15rem;
+  height: 15rem;
+  background-color: #f97316;
+  border-radius: 9999px;
+  filter: blur(150px);
+  z-index: -10;
+}
+
+.glow-circle2 {
+  position: absolute;
+  bottom: 3rem;
+  right: 2.5rem;
+  width: 15rem;
+  height: 15rem;
+  background-color: #3b82f6;
+  border-radius: 9999px;
+  filter: blur(150px);
+  z-index: -10;
+}
+
+/* Contact section */
+.custom-input {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  border: 1px solid #1f2937;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.custom-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #000000;
+  border-color: transparent;
+}
+
+.custom-textarea {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  border: 1px solid #1f2937;
+  min-height: 15rem;
+  outline: none;
+  transition: all 0.3s ease;
+  resize: vertical;
+}
+
+.custom-textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #000000;
+  border-color: transparent;
+}
+
+/* Footer section */
+.contact-link {
+  font-size: 1.125rem;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+  color: #f8ed88;
+  margin-left: 0.625rem;
+}
+
+.quick-link {
+  font-size: 1.125rem;
+  padding-left: 1.5rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.quick-link:hover {
+  color: #f8ed88;
+  margin-left: 0.625rem;
+}
+
+.custom-icon {
+  position: absolute;
+  left: 0.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.custom-circle {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #f8ed88;
+  color: #f8ed88;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.custom-circle:hover {
+  border-color: white;
+  color: white;
+  transform: translateY(-0.25rem);
+}
 
 /* scroll section */
 @keyframes scroll {
