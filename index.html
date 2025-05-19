@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>ZENSEI</title>
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/images/brand_logo/favicon.png"
+    />
 
     <!-- Tailwind cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -25,7 +31,7 @@
   </head>
   <body class="bg-black text-white">
     <!-- WhatsApp Icon -->
-    <a href="https://wa.me/" class="whatsapp-icon" target="_blank">
+    <a href="https://wa.me/+918891107823" class="whatsapp-icon" target="_blank">
       <img
         src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
         alt="WhatsApp"
@@ -43,7 +49,7 @@
         <header class="h-[14vh] flex items-center justify-between">
           <div class="logo">
             <img
-              src="./assets/images/brand_logo/ZENSEI LOGO-01.png"
+              src="./assets/images/brand_logo/brand_logo.png"
               alt="logo"
               class="w-24"
             />
@@ -51,27 +57,39 @@
 
           <!-- Desktop Navigation -->
           <nav class="hidden md:block">
-            <ul class="flex space-x-8">
+            <ul class="flex space-x-10">
               <li>
-                <a href="#" class="text-[#f0f0f0] hover:text-[#f8ed88]">Home</a>
+                <a
+                  href="#"
+                  class="text-[#f0f0f0] hover:text-[#f8ed88] text-lg font-bold"
+                  >Home</a
+                >
               </li>
               <li>
-                <a href="#" class="text-[#f0f0f0] hover:text-[#f8ed88]"
+                <a
+                  href="#about"
+                  class="text-[#f0f0f0] hover:text-[#f8ed88] text-lg font-bold"
                   >About</a
                 >
               </li>
               <li>
-                <a href="#" class="text-[#f0f0f0] hover:text-[#f8ed88]"
+                <a
+                  href="#products"
+                  class="text-[#f0f0f0] hover:text-[#f8ed88] text-lg font-bold"
                   >Products</a
                 >
               </li>
               <li>
-                <a href="#" class="text-[#f0f0f0] hover:text-[#f8ed88]"
+                <a
+                  href="#gallery"
+                  class="text-[#f0f0f0] hover:text-[#f8ed88] text-lg font-bold"
                   >Gallery</a
                 >
               </li>
               <li>
-                <a href="#" class="text-[#f0f0f0] hover:text-[#f8ed88]"
+                <a
+                  href="#contact"
+                  class="text-[#f0f0f0] hover:text-[#f8ed88] text-lg font-bold"
                   >Contact</a
                 >
               </li>
@@ -99,7 +117,7 @@
             <h1
               class="text-4xl sm:text-3xl md:text-6xl lg:text-7xl uppercase font-bold text-white leading-tight"
             >
-              THE FRAGRANCE OF LIFE
+              Find Your Fragrance Story
             </h1>
           </div>
 
@@ -178,7 +196,7 @@
 
     <main>
       <!-- About section -->
-      <section class="bg-[#101010] py-20 overflow-hidden">
+      <section class="bg-[#101010] py-20 overflow-hidden" id="about">
         <div
           class="container mx-auto px-4 md:px-8 max-w-[1300px] flex flex-col xl:flex-row items-center justify-center xl:justify-between gap-10 xl:gap-0"
         >
@@ -213,13 +231,13 @@
               serenity, and let your fragrance tell your story. Zensei—where
               every scent speaks volumes.
             </p>
-            <button class="main-btn">Read More</button>
+            <!-- <button class="main-btn">Read More</button> -->
           </div>
         </div>
       </section>
 
       <!-- Product section -->
-      <section class="bg-black py-20 overflow-hidden">
+      <section class="bg-black py-20 overflow-hidden" id="products">
         <div class="container mx-auto px-4 md:px-8 max-w-[1300px] text-center">
           <h2
             class="text-4xl sm:text-6xl font-allura text-[#f8ed88] mb-12"
@@ -344,7 +362,7 @@
                 ></i>
               </div>
               <h3 class="text-2xl font-bold mb-3">Elegant design</h3>
-              <p class="text-md">
+              <p class="text-sm">
                 Zensei Perfume's sleek, modern design and elegant packaging
                 exude sophistication and premium quality. The bottle's luxurious
                 simplicity and timeless charm elevate your fragrance experience,
@@ -360,7 +378,7 @@
                 <i class="fa-solid fa-user-group text-4xl text-[#f8ed88]"></i>
               </div>
               <h3 class="text-2xl font-bold mb-3">Unisex appeal</h3>
-              <p class="text-md">
+              <p class="text-sm">
                 Zensei Perfume embraces universal elegance, designed for both
                 men and women. Its balanced fragrance blends boldness and
                 softness, making it a versatile, timeless scent for everyone
@@ -375,7 +393,7 @@
                 <i class="fa-solid fa-flask text-4xl text-[#f8ed88]"></i>
               </div>
               <h3 class="text-2xl font-bold mb-3">Signature blend</h3>
-              <p class="text-md">
+              <p class="text-sm">
                 Zensei Perfume combines French-imported fragrances in a
                 signature blend, expertly balancing luxury, freshness, and
                 elegance. The result is a timeless, long-lasting scent that
@@ -414,7 +432,7 @@
       </section>
 
       <!-- Gallery section -->
-      <section class="bg-[#101010] py-20 overflow-hidden">
+      <section class="bg-[#101010] py-20 overflow-hidden" id="gallery">
         <div class="container mx-auto px-4 md:px-8 max-w-[1300px] text-center">
           <h2
             class="text-4xl sm:text-6xl font-allura text-[#e2f2b0] mb-12"
@@ -517,7 +535,7 @@
         </div>
       </section>
 
-      <section class="py-20 overflow-hidden">
+      <section class="py-20 overflow-hidden" id="contact">
         <div class="container mx-auto px-4 md:px-8 max-w-[1300px]">
           <div class="flex justify-center">
             <div class="w-full text-center pb-12">
@@ -541,33 +559,40 @@
                 <img src="./assets/images/gallery/contact.jpeg" alt="" />
               </div>
               <div class="w-full lg:w-7/12">
+                <form onsubmit="return sendToWhatsApp(event)">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div class="mb-4">
-                    <input
-                      type="text"
-                      class="custom-input"
-                      placeholder="Your Name"
-                      required
-                    />
-                  </div>
-                  <div class="mb-4">
-                    <input
-                      type="email"
-                      class="custom-input"
-                      placeholder="Your Email"
-                      required
-                    />
-                  </div>
-                  <div class="md:col-span-2 mb-4">
-                    <textarea
-                      class="custom-textarea"
-                      placeholder="Your Message"
-                      required
-                    ></textarea>
-                  </div>
-                  <div class="md:col-span-2 mb-4">
-                    <button class="main-btn">Send Message</button>
-                  </div>
+                    <div class="mb-4">
+                      <input
+                        type="text"
+                        class="custom-input"
+                        placeholder="Your Name"
+                        id="name"
+                        required
+                      />
+                    </div>
+                    <div class="mb-4">
+                      <input
+                        type="email"
+                        class="custom-input"
+                        placeholder="Your Email"
+                        id="email"
+                        required
+                      />
+                    </div>
+                    <div class="md:col-span-2 mb-4">
+                      <textarea
+                        class="custom-textarea"
+                        placeholder="Your Message"
+                        id="message"
+                        required
+                      ></textarea>
+                    </div>
+                    <div class="md:col-span-2 mb-4">
+                      <button type="submit" class="main-btn">
+                        Send Message
+                      </button>
+                    </form>
+                    </div>
                 </div>
               </div>
             </div>
@@ -597,13 +622,13 @@
               <div class="contact-info">
                 <ul class="list-none">
                   <li class="mb-2">
-                    <a href="#" class="contact-link">
-                      <i class="fa fa-phone mr-4"></i>+1 222 3333
+                    <a href="tel:+918891107823" class="contact-link">
+                      <i class="fa fa-phone mr-4"></i>+91 8891107823
                     </a>
                   </li>
                   <li class="mb-4">
-                    <a href="#" class="contact-link">
-                      <i class="fa fa-envelope mr-4"></i>info@example.com
+                    <a href="mailto:zenseiind@gmail.com" class="contact-link">
+                      <i class="fa fa-envelope mr-4"></i>zenseiind@gmail.com
                     </a>
                   </li>
                 </ul>
@@ -620,22 +645,22 @@
                   </a>
                 </li>
                 <li class="mb-2">
-                  <a href="#" class="quick-link">
+                  <a href="#about" class="quick-link">
                     <i class="fas fa-angle-right custom-icon"></i>About
                   </a>
                 </li>
                 <li class="mb-2">
-                  <a href="#" class="quick-link">
+                  <a href="#products" class="quick-link">
                     <i class="fas fa-angle-right custom-icon"></i>Products
                   </a>
                 </li>
                 <li class="mb-2">
-                  <a href="#" class="quick-link">
+                  <a href="#gallery" class="quick-link">
                     <i class="fas fa-angle-right custom-icon"></i>Gallery
                   </a>
                 </li>
                 <li class="mb-2">
-                  <a href="#" class="quick-link">
+                  <a href="#contact" class="quick-link">
                     <i class="fas fa-angle-right custom-icon"></i>Contact
                   </a>
                 </li>
@@ -649,17 +674,29 @@
               </h5>
               <ul class="social-network flex items-center list-none p-0">
                 <li class="mx-2">
-                  <a href="#" class="custom-circle">
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61571060610002"
+                    class="custom-circle"
+                    target="_blank"
+                  >
                     <i class="fab fa-facebook-f"></i>
                   </a>
                 </li>
                 <li class="mx-2">
-                  <a href="#" class="custom-circle">
+                  <a
+                    href="https://www.instagram.com/zensei_perfumes?igsh=YzljYTk1ODg3Zg=="
+                    class="custom-circle"
+                    target="_blank"
+                  >
                     <i class="fab fa-instagram"></i>
                   </a>
                 </li>
                 <li class="mx-2">
-                  <a href="#" class="custom-circle">
+                  <a
+                    href="https://wa.me/+918891107823"
+                    class="custom-circle"
+                    target="_blank"
+                  >
                     <i class="fab fa-whatsapp"></i>
                   </a>
                 </li>
@@ -706,6 +743,22 @@
           nav.remove();
         });
       });
+    </script>
+
+    <script>
+      function sendToWhatsApp(event) {
+        event.preventDefault();
+
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
+        var phoneNumber = "+918891107823";
+
+        var encodedMessage = `Hello,%0AMy Name: ${name}%0AEmail: ${email}%0AMessage:%0A${message}`;
+        var whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+        window.open(whatsappURL, "_blank");
+      }
     </script>
 
     <script>
