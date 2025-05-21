@@ -29,7 +29,17 @@
     <!-- AOS CDN -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
+
   <body class="bg-black text-white">
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+      <img
+        src="./assets/images/brand_logo/brand_logo.png"
+        alt="Loading"
+        class="blink-image"
+      />
+    </div>
+
     <!-- WhatsApp Icon -->
     <a href="https://wa.me/+918891107823" class="whatsapp-icon" target="_blank">
       <img
@@ -250,7 +260,7 @@
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Product 1 -->
             <div class="card-box" data-aos="fade-up" data-aos-duration="1000">
-              <div class="h-80 flex items-center justify-center">
+              <div class="h-80 flex items-center justify-center bg-black p-3">
                 <img
                   src="./assets/images/products/PhotoRoom-20250414_143726-removebg-preview.png"
                   alt="perfume"
@@ -258,15 +268,27 @@
                 />
               </div>
               <div class="mt-4">
-                <h3 class="text-xl">Perfume</h3>
-                <p class="text-xl my-2">$20.00</p>
-                <button class="main-btn">Add To Cart</button>
+                <h3 class="text-xl">Revolution Blue</h3>
+                <div class="flex justify-between items-center">
+                  <div class="flex gap-3 items-center">
+                    <p
+                      class="text-xl mt-3 mb-4 line-through decoration-[#f8ed88] decoration-2"
+                    >
+                      ₹ 399
+                    </p>
+                    <p class="text-xl mt-3 mb-4">₹ 199</p>
+                  </div>
+                  <p class="text-xl mt-3 mb-4">50ml</p>
+                </div>
+                <a href="https://wa.me/+918891107823" target="_blank">
+                  <button class="main-btn">Order Now</button>
+                </a>
               </div>
             </div>
 
             <!-- Product 2 -->
             <div class="card-box" data-aos="fade-up" data-aos-duration="2000">
-              <div class="h-80 flex items-center justify-center">
+              <div class="h-80 flex items-center justify-center bg-black p-3">
                 <img
                   src="./assets/images/products/p2.png"
                   alt="perfume"
@@ -274,15 +296,27 @@
                 />
               </div>
               <div class="mt-4">
-                <h3 class="text-xl">Perfume</h3>
-                <p class="text-xl my-2">$20.00</p>
-                <button class="main-btn">Add To Cart</button>
+                <h3 class="text-xl">Revolution Pink</h3>
+                <div class="flex justify-between items-center">
+                  <div class="flex gap-3 items-center">
+                    <p
+                      class="text-xl mt-3 mb-4 line-through decoration-[#f8ed88] decoration-2"
+                    >
+                      ₹ 399
+                    </p>
+                    <p class="text-xl mt-3 mb-4">₹ 199</p>
+                  </div>
+                  <p class="text-xl mt-3 mb-4">50ml</p>
+                </div>
+                <a href="https://wa.me/+918891107823" target="_blank">
+                  <button class="main-btn">Order Now</button>
+                </a>
               </div>
             </div>
 
             <!-- Product 3 -->
             <div class="card-box" data-aos="fade-up" data-aos-duration="3000">
-              <div class="h-80 flex items-center justify-center">
+              <div class="h-80 flex items-center justify-center bg-black p-3">
                 <img
                   src="./assets/images/products/p3.png"
                   alt="perfume"
@@ -290,43 +324,79 @@
                 />
               </div>
               <div class="mt-4">
-                <h3 class="text-xl">Perfume</h3>
-                <p class="text-xl my-2">$20.00</p>
-                <button class="main-btn">Add To Cart</button>
+                <h3 class="text-xl">Revolution Green</h3>
+                <div class="flex justify-between items-center">
+                  <div class="flex gap-3 items-center">
+                    <p
+                      class="text-xl mt-3 mb-4 line-through decoration-[#f8ed88] decoration-2"
+                    >
+                      ₹ 399
+                    </p>
+                    <p class="text-xl mt-3 mb-4">₹ 199</p>
+                  </div>
+                  <p class="text-xl mt-3 mb-4">50ml</p>
+                </div>
+                <a href="https://wa.me/+918891107823" target="_blank">
+                  <button class="main-btn">Order Now</button>
+                </a>
               </div>
             </div>
 
             <!-- Product 4 -->
-            <!-- <div class="card-box" data-aos="fade-up" data-aos-duration="1000">
-              <div class="h-80 flex items-center justify-center">
+            <div class="card-box" data-aos="fade-up" data-aos-duration="3000">
+              <div class="h-80 flex items-center justify-center bg-black p-3">
                 <img
-                  src="./Perfume Website Images/perfume5.png"
+                  src="./assets/images/products/p1.png"
                   alt="perfume"
                   class="h-full"
                 />
               </div>
               <div class="mt-4">
-                <h3 class="text-xl">Perfume</h3>
-                <p class="text-xl my-2">$20.00</p>
-                <button class="main-btn">Add To Cart</button>
+                <h3 class="text-xl">Revolution Black</h3>
+                <div class="flex justify-between items-center">
+                  <div class="flex gap-3 items-center">
+                    <p
+                      class="text-xl mt-3 mb-4 line-through decoration-[#f8ed88] decoration-2"
+                    >
+                      ₹ 399
+                    </p>
+                    <p class="text-xl mt-3 mb-4">₹ 199</p>
+                  </div>
+                  <p class="text-xl mt-3 mb-4">50ml</p>
+                </div>
+                <a href="https://wa.me/+918891107823" target="_blank">
+                  <button class="main-btn">Order Now</button>
+                </a>
               </div>
-            </div> -->
+            </div>
 
             <!-- Product 5 -->
-            <!-- <div class="card-box" data-aos="fade-up" data-aos-duration="2000">
-              <div class="h-80 flex items-center justify-center">
+            <div class="card-box" data-aos="fade-up" data-aos-duration="3000">
+              <div class="h-80 flex items-center justify-center bg-black p-3">
                 <img
-                  src="./Perfume Website Images/perfume6.png"
+                  src="./assets/images/hero/erasebg-transformed.png"
                   alt="perfume"
                   class="h-full"
                 />
               </div>
               <div class="mt-4">
-                <h3 class="text-xl">Perfume</h3>
-                <p class="text-xl my-2">$20.00</p>
-                <button class="main-btn">Add To Cart</button>
+                <h3 class="text-xl">Premium</h3>
+                <div class="flex justify-between items-center">
+                  <div class="flex gap-3 items-center">
+                    <p
+                      class="text-xl mt-3 mb-4 line-through decoration-[#f8ed88] decoration-2"
+                    >
+                      ₹ 2499
+                    </p>
+                    <p class="text-xl mt-3 mb-4">₹ 1799</p>
+                  </div>
+                  <p class="text-xl mt-3 mb-4">100ml</p>
+                </div>
+                <a href="https://wa.me/+918891107823" target="_blank">
+                  <button class="main-btn">Order Now</button>
+                </a>
               </div>
-            </div> -->
+            </div>
 
             <!-- Product 6 -->
             <!-- <div class="card-box" data-aos="fade-up" data-aos-duration="3000">
@@ -421,12 +491,14 @@
           </div>
 
           <div data-aos="fade-left" data-aos-duration="2000">
-            <p class="text-lg text-[#f8ed88] uppercase">Celebrate Day Sale!</p>
-            <h3 class="text-3xl sm:text-4xl my-2">
-              Save 25% Off On All <br />
-              Items Collection
+            <p class="text-lg text-[#f8ed88] uppercase">Celebrate & Shop!</p>
+            <h3 class="text-3xl sm:text-4xl my-4">
+              50% Off the Entire <br />
+              Collection
             </h3>
-            <button class="main-btn">Shop Now</button>
+            <a href="https://wa.me/+918891107823" target="_blank">
+              <button class="main-btn">Order Now</button>
+            </a>
           </div>
         </div>
       </section>
@@ -560,7 +632,7 @@
               </div>
               <div class="w-full lg:w-7/12">
                 <form onsubmit="return sendToWhatsApp(event)">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div class="mb-4">
                       <input
                         type="text"
@@ -591,9 +663,9 @@
                       <button type="submit" class="main-btn">
                         Send Message
                       </button>
-                    </form>
                     </div>
-                </div>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
@@ -726,21 +798,28 @@
         const nav = document.createElement("nav");
         nav.className = "toggle-container";
         nav.innerHTML = `
-          <button class="close-btn">×</button>
-          <ul class="toggle-container-list">
-            <li><a href="#" class="toggle-container-text">Home</a></li>
-            <li><a href="#" class="toggle-container-text">About</a></li>
-            <li><a href="#" class="toggle-container-text">Products</a></li>
-            <li><a href="#" class="toggle-container-text">Gallery</a></li>
-            <li><a href="#" class="toggle-container-text">Contact</a></li>
-          </ul>
-        `;
+      <button class="close-btn">×</button>
+      <ul class="toggle-container-list">
+        <li><a href="#" class="toggle-container-text">Home</a></li>
+        <li><a href="#about" class="toggle-container-text">About</a></li>
+        <li><a href="#products" class="toggle-container-text">Products</a></li>
+        <li><a href="#gallery" class="toggle-container-text">Gallery</a></li>
+        <li><a href="#contact" class="toggle-container-text">Contact</a></li>
+      </ul>
+    `;
 
         document.body.appendChild(nav);
 
         // Close button functionality
-        nav.querySelector("button").addEventListener("click", function () {
+        nav.querySelector(".close-btn").addEventListener("click", function () {
           nav.remove();
+        });
+
+        // Close nav when any link is clicked
+        nav.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", () => {
+            nav.remove();
+          });
         });
       });
     </script>
@@ -765,4 +844,18 @@
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
   </body>
+
+  <script>
+    // Wait until the whole page loads
+    window.addEventListener("load", () => {
+      const loadingScreen = document.getElementById("loading-screen");
+      const mainContent = document.getElementById("main-content");
+
+      // Delay for 1.5 seconds (1500ms)
+      setTimeout(() => {
+        loadingScreen.style.display = "none";
+        mainContent.style.display = "block";
+      }, 1500); // Adjust time (in ms) as needed
+    });
+  </script>
 </html>
