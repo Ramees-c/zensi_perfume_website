@@ -853,11 +853,9 @@
       const loadingScreen = document.getElementById("loading-screen");
       const mainContent = document.getElementById("main-content");
 
-      // Delay for 1.5 seconds (1500ms)
-      setTimeout(() => {
-        loadingScreen.style.display = "none";
-        mainContent.style.display = "block";
-      }, 1500); // Adjust time (in ms) as needed
+      // Immediately hide the loading screen and show the main content
+      loadingScreen.style.display = "none";
+      mainContent.style.display = "block";
     });
   </script>
 </html>
